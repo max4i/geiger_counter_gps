@@ -1,8 +1,13 @@
 # 🚀 Licznik Geigera - System Mapowania Promieniowania z GPS przeznaczony do szklenia WOT.
+W Polskiej armii nazywany jako DOZYMETR
+Trzy rodzaje mocowania pozwalają na podwieszanie Licznika pod drony typu TAROT, MARK4 i płatowce.
+Waga ok 300g.
+
 
 ![Baner Projektu](jpg/1.jpg)
 
-Amatorski system do mapowania promieniowania zintegrowany z technologią dronów. Monitoring środowiska w czasie rzeczywistym z pozycjonowaniem GPS i transmisją bezprzewodową.
+Amatorski system do mapowania promieniowania zintegrowany z technologią GPS oraz openmaps. 
+Monitoring środowiska w czasie rzeczywistym z pozycjonowaniem GPS i transmisją bezprzewodową.
 
 ## 📖 Opis Projektu
 
@@ -25,6 +30,7 @@ do budowy wykorzystano prosty i tani licznik z aliexpress.
 ![Interfejs Aplikacji](jpg/2.jpg)
 
 **Kalibracja systemu**
+
 System został skalibrowany  na podstawie wskazań Państwowej Agencji Atomistyki (POLAND)
 https://monitoring.paa.gov.pl/maps-portal/
 
@@ -38,6 +44,7 @@ https://monitoring.paa.gov.pl/maps-portal/
 - **Moduł Bezprzewodowy** HC-12 lub LoRa D02 1200 speed !!!
 - **Zasilanie** LiPo 3.7V
 - **Powerbank module(step up 5V**
+- interfejs USB pod PC typ ch340. stawiony na stałe z prędkością 1200.
 (jpg/6.jpg)
 
 ### Schemat Podłączenia
