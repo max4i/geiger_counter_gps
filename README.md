@@ -102,7 +102,7 @@ Connectivity	GPS, Wireless 433MHz or 900MHz
 ![...](jpg/12.jpg)
 ![...](jpg/3.jpg)
 ![...](jpg/10.jpg)
-
+...
 👤 Author
 max4i - Project and implementation
 
