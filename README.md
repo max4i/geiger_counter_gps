@@ -1,3 +1,4 @@
+markdown
 # 🚀 Geiger Counter - GPS Radiation Mapping System for Military Training
 
 In the Polish Army known as **DOSIMETER**
@@ -95,25 +96,18 @@ Update Frequency	15 seconds
 Battery Life	4-6 hours
 Display	OLED 128x32/64
 Connectivity	GPS, Wireless 433MHz or 900MHz
+📸 Gallery
+Drone Integration Examples
+https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/7.jpg
 
+Field Testing Scenarios
+https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/12.jpg
 
-![Drone Mounting](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/7.jpg)
+Hardware Components
+https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/3.jpg
 
-
-
-### Field Testing Scenarios
-
-![Field Testing](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/12.jpg)
-
-
-### Hardware Components
-
-![System Components](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/3.jpg)
-
-
-### Technical Assembly
-![Technical Assembly](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/10.jpg)
-👤 Author)
+Technical Assembly
+https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/10.jpg
 
 👤 Author
 max4i - Project and implementation
