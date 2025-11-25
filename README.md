@@ -95,8 +95,9 @@ Update Frequency	15 seconds
 Battery Life	4-6 hours
 Display	OLED 128x32/64
 Connectivity	GPS, Wireless 433MHz or 900MHz
-📸 Gallery
-https://jpg/7.jpg
+
+
+(https://jpg/7.jpg)
 
 https://jpg/12.jpg
 
