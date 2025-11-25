@@ -1,103 +1,116 @@
-# 🚀 Licznik Geigera - System Mapowania Promieniowania z GPS przeznaczony do szklenia WOT.
-W Polskiej armii nazywany jako DOZYMETR
-Trzy rodzaje mocowania pozwalają na podwieszanie Licznika pod drony typu TAROT, MARK4 i płatowce.
-Waga ok 300g.
+# 🚀 Geiger Counter - GPS Radiation Mapping System for Military Training
 
+In the Polish Army known as **DOSIMETER**
 
-![Baner Projektu](jpg/1.jpg)
+Three mounting types allow attaching the Geiger Counter under TAROT, MARK4 drones and fixed-wing aircraft.
+Weight approx. 300g.
 
-Amatorski system do mapowania promieniowania zintegrowany z technologią GPS oraz openmaps. 
-Monitoring środowiska w czasie rzeczywistym z pozycjonowaniem GPS i transmisją bezprzewodową.
+![Project Banner](jpg/1.jpg)
 
-## 📖 Opis Projektu
+Amateur radiation mapping system integrated with GPS technology and openmaps. 
+Real-time environmental monitoring with GPS positioning and wireless data transmission.
 
-System łączy licznik Geigera-Müllera, moduł GPS i komunikację bezprzewodową do tworzenia interaktywnych map promieniowania w czasie rzeczywistym. Zaprojektowany do monitorowania środowiska, badań naukowych, rozpoznawania skażeń  i celów edukacyjnych.
-do budowy wykorzystano prosty i tani licznik z aliexpress.
+## 📖 Project Description
 
-![Konfiguracja Sprzętu](jpg/13.jpg)
+The system combines Geiger-Müller tube, GPS module and wireless communication to create interactive radiation maps in real-time. Designed for environmental monitoring, scientific research, contamination reconnaissance and educational purposes.
+Built using simple and inexpensive Geiger counter from AliExpress.
 
-## ✨ Główne Funkcje
+![Hardware Setup](jpg/13.jpg)
 
-- **📡 Pomiar Promieniowania** - Zakres 0.01-100 μSv/h z precyzyjnym monitoringiem
-- **🛰️ Precyzyjne Pozycjonowanie GPS** - Współrzędne w czasie rzeczywistym z wyświetlaczem OLED 128/32 lub 128/64
-- **📶 dwie możliwości przesyłania danych **:
-  1. HC-12 (zasięg do 3 km)
-  2. LoRa D02 (zasięg do 12 km)
-- **🗺️ Mapowanie w Czasie Rzeczywistym** - Interaktywny interfejs graficzny
-- **💾 Eksport Danych** - Formaty CSV i KML do analizy
-- **🎯 Automatyczne Generowanie Map** - Poziomy promieniowania oznaczone kolorami
+## ✨ Main Features
 
-![Interfejs Aplikacji](jpg/2.jpg)
+- **📡 Radiation Measurement** - Range 0.01-100 μSv/h with precise monitoring
+- **🛰️ Precise GPS Positioning** - Real-time coordinates with OLED 128x32 or 128x64 display
+- **📶 Two Data Transmission Options**:
+  1. HC-12 (range up to 3 km)
+  2. LoRa D02 (range up to 12 km)
+- **🗺️ Real-time Mapping** - Interactive graphical interface
+- **💾 Data Export** - CSV and KML formats for analysis
+- **🎯 Automatic Map Generation** - Color-coded radiation levels
 
-**Kalibracja systemu**
+![Application Interface](jpg/2.jpg)
 
-System został skalibrowany  na podstawie wskazań Państwowej Agencji Atomistyki (POLAND)
+**System Calibration**
+
+The system has been calibrated based on readings from the National Atomic Energy Agency (POLAND)
 https://monitoring.paa.gov.pl/maps-portal/
 
-## 🛠️ Komponenty Sprzętowe
+## 🛠️ Hardware Components
 
-### Podstawowe Komponenty
-- **Arduino Nano** - Główny kontroler
-- **Tuba Geigera-Müllera** (radiationD cajoe)
-- **Moduł GPS** dowolny nmea 4800 speed
-- **Wyświetlacz OLED** 128x32/64
-- **Moduł Bezprzewodowy** HC-12 lub LoRa D02 1200 speed !!!
-- **Zasilanie** LiPo 3.7V
-- **Powerbank module(step up 5V**
-- interfejs USB pod PC typ ch340. stawiony na stałe z prędkością 1200.
-(jpg/6.jpg)
+### Basic Components
+- **Arduino Nano** - Main controller
+- **Geiger-Müller Tube** (radiationD cajoe)
+- **GPS Module** - any NMEA 4800 speed
+- **OLED Display** 128x32/64
+- **Wireless Module** HC-12 or LoRa D02 1200 speed !!!
+- **Power Supply** LiPo 3.7V
+- **Powerbank module** (step up to 5V)
+- **USB interface** for PC type CH340. Fixed speed 1200.
 
-### Schemat Podłączenia
-GM → Pin 2 (INT) 
-GPS → Piny 4,5 Arduino Nano
+![Hardware Details](jpg/6.jpg)
+
+### Connection Diagram
+GM Tube → Pin 2 (INT)
+GPS → Pins 4,5 Arduino Nano
 OLED → I2C (A4,A5) HC-12/LoRa → UART
 
-**Uruchomienie Aplikacji Python**
+text
+
+## 🚀 Quick Start
+
+**Run Python Application**
+```bash
 cd python
 python geiger_v21.py
+Or Use Pre-built EXE File
 
-Lub Użyj Gotowego Pliku EXE
+Download from: Releases
 
-(https://github.com/max4i/geiger_counter_gps/releases)
+Version 0.16 is the old version created for Air Force as a rationalization proposal
 
-wersja 0.16 to stara wersja robiona dla  sił powietrznych jako wniosek racjonalizatorski
+📡 Communication Protocol
+Data Format
 
-**Format Danych**
-Data|Czas|Szerokość|Długość|Wysokość|Satelity|HDOP|Dokładność|Dawka_Chwilowa|Dawka_Uśredniona
+text
+Date|Time|Latitude|Longitude|Altitude|Satellites|HDOP|Accuracy|Current_Dose|Average_Dose
+Example Data Frame
 
-**Przykładowa Ramka Danych**
+text
 24.11.2025r.|14:30:25|52.229770|21.011780|113.45|8|1.25|4|0.15|0.12
+🗺️ Radiation Mapping
+Application automatically generates maps with color-coded points:
 
-**Mapowanie Promieniowania**
-Aplikacja automatycznie generuje mapy z kolorowymi punktami:
+🟢 Green: < 0.15 μSv/h (Safe - Normal background)
 
-🟢 Zielony: < 0.15 μSv/h (Bezpieczne - Normalne tło)
+🟠 Orange: 0.15-1.0 μSv/h (Elevated - Further investigation required)
 
-🟠 Pomarańczowy: 0.15-1.0 μSv/h (Podwyższone - Wymaga dalszych badań)
+🔴 Red: > 1.0 μSv/h (Dangerous - Immediate action required)
 
-🔴 Czerwony: > 1.0 μSv/h (Niebezpieczne - Wymaga natychmiastowego działania)
+🎯 Technical Specifications
+Parameter	Specification
+Measurement Range	0.01-100 μSv/h
+GPS Accuracy	2-3 meters
+Wireless Range	HC-12: 3km, LoRa: 12km
+Update Frequency	15 seconds
+Battery Life	4-6 hours
+Display	OLED 128x32/64
+Connectivity	GPS, Wireless 433MHz or 900MHz
+📸 Gallery
+https://jpg/7.jpg
 
-**Specyfikacja Techniczna**
+https://jpg/12.jpg
 
-Zakres Pomiarowy	0.01-100 μSv/h
-Dokładność GPS	2-3 metry
-Zasięg Bezprzewodowy	HC-12: 3km, LoRa: 12km
-Częstotliwość Aktualizacji	15 sekund
-Czas Pracy Baterii	4-6 godzin
-Wyświetlacz	OLED 128x32/64
-Łączność	z GS Bezprzewodowa $33Mhz lyb 900MHZ
+https://jpg/3.jpg
 
-**Autor**
-max4i - Projekt i implementacja
+https://jpg/10.jpg
 
-**⚠️ OSTRZEŻENIE BEZPIECZEŃSTWA**
+👤 Author
+max4i - Project and implementation
 
-Urządzenie jest przeznaczone do celów edukacyjnych i badawczych. Pomiary nie zastępują profesjonalnego sprzętu do monitorowania promieniowania. Zawsze przestrzegaj lokalnych przepisów bezpieczeństwa radiacyjnego i używaj certyfikowanego sprzętu do zastosowań krytycznych dla bezpieczeństwa.
+⚠️ SAFETY WARNING
 
-(jpg/7.jpg)
+This device is intended for educational and research purposes. Measurements do not replace professional radiation monitoring equipment. Always follow local radiation safety regulations and use certified equipment for safety-critical applications.
 
-(jpg/12.jpg)
+🔬 For scientific use, always calibrate with reference sources and maintain proper documentation.
 
-(jpg/3.jpg)
-
-(jpg/10.jpg)
+⭐ If you find this project useful, please give it a star!
