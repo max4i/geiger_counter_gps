@@ -7,8 +7,9 @@ Amatorski system do mapowania promieniowania zintegrowany z technologią dronów
 ## 📖 Opis Projektu
 
 System łączy licznik Geigera-Müllera, moduł GPS i komunikację bezprzewodową do tworzenia interaktywnych map promieniowania w czasie rzeczywistym. Zaprojektowany do monitorowania środowiska, badań naukowych i celów edukacyjnych.
+do budowy wykożystano prosty i tani licznik z aliexpress.
 
-![Konfiguracja Sprzętu](images/13.jpg)
+![Konfiguracja Sprzętu](jpg/13.jpg)
 
 ## ✨ Główne Funkcje
 
@@ -21,7 +22,7 @@ System łączy licznik Geigera-Müllera, moduł GPS i komunikację bezprzewodow�
 - **💾 Eksport Danych** - Formaty CSV i KML do analizy
 - **🎯 Automatyczne Generowanie Map** - Poziomy promieniowania oznaczone kolorami
 
-![Interfejs Aplikacji](images/3.jpg)
+![Interfejs Aplikacji](jpg/6.jpg)
 
 ## 🛠️ Komponenty Sprzętowe
 
@@ -32,5 +33,6 @@ System łączy licznik Geigera-Müllera, moduł GPS i komunikację bezprzewodow�
 - **Wyświetlacz OLED** 128x32
 - **Moduł Bezprzewodowy** HC-12 lub LoRa D02
 - **Zasilanie** LiPo 3.7V
+(jpg/13.jpg)
 
 ### Schemat Podłączenia
