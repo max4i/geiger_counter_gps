@@ -24,6 +24,10 @@ do budowy wykorzystano prosty i tani licznik z aliexpress.
 
 ![Interfejs Aplikacji](jpg/2.jpg)
 
+**Kalibracja systemu**
+System został skalibrowany  na podstawie wskazań Państwowej Agencji Atomistyki (POLAND)
+https://monitoring.paa.gov.pl/maps-portal/
+
 ## 🛠️ Komponenty Sprzętowe
 
 ### Podstawowe Komponenty
@@ -46,16 +50,18 @@ cd python
 python geiger_v21.py
 
 Lub Użyj Gotowego Pliku EXE
+
 (https://github.com/max4i/geiger_counter_gps/releases)
+
 wersja 0.16 to stara wersja robiona dla  sił powietrznych jako wniosek racjonalizatorski
 
-Format Danych
+**Format Danych**
 Data|Czas|Szerokość|Długość|Wysokość|Satelity|HDOP|Dokładność|Dawka_Chwilowa|Dawka_Uśredniona
 
-Przykładowa Ramka Danych
+**Przykładowa Ramka Danych**
 24.11.2025r.|14:30:25|52.229770|21.011780|113.45|8|1.25|4|0.15|0.12
 
-Mapowanie Promieniowania
+**Mapowanie Promieniowania**
 Aplikacja automatycznie generuje mapy z kolorowymi punktami:
 
 🟢 Zielony: < 0.15 μSv/h (Bezpieczne - Normalne tło)
@@ -64,21 +70,21 @@ Aplikacja automatycznie generuje mapy z kolorowymi punktami:
 
 🔴 Czerwony: > 1.0 μSv/h (Niebezpieczne - Wymaga natychmiastowego działania)
 
-Specyfikacja Techniczna
-Parametr	Specyfikacja
+**Specyfikacja Techniczna**
+
 Zakres Pomiarowy	0.01-100 μSv/h
 Dokładność GPS	2-3 metry
 Zasięg Bezprzewodowy	HC-12: 3km, LoRa: 12km
 Częstotliwość Aktualizacji	15 sekund
 Czas Pracy Baterii	4-6 godzin
-Wyświetlacz	OLED 128x32
-Łączność	UART, I2C, Bezprzewodowa
+Wyświetlacz	OLED 128x32/64
+Łączność	z GS Bezprzewodowa $33Mhz lyb 900MHZ
 
-Autor
+**Autor**
 max4i - Projekt i implementacja
 
-⚠️ OSTRZEŻENIE BEZPIECZEŃSTWA
+**⚠️ OSTRZEŻENIE BEZPIECZEŃSTWA**
 
 Urządzenie jest przeznaczone do celów edukacyjnych i badawczych. Pomiary nie zastępują profesjonalnego sprzętu do monitorowania promieniowania. Zawsze przestrzegaj lokalnych przepisów bezpieczeństwa radiacyjnego i używaj certyfikowanego sprzętu do zastosowań krytycznych dla bezpieczeństwa.
 
-🔬 Do zastosowań naukowych zawsze kalibruj ze źródłami referencyjnymi i prowadź właściwą dokumentację.
+
