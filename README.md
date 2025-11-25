@@ -94,4 +94,10 @@ max4i - Projekt i implementacja
 
 Urządzenie jest przeznaczone do celów edukacyjnych i badawczych. Pomiary nie zastępują profesjonalnego sprzętu do monitorowania promieniowania. Zawsze przestrzegaj lokalnych przepisów bezpieczeństwa radiacyjnego i używaj certyfikowanego sprzętu do zastosowań krytycznych dla bezpieczeństwa.
 
+(jpg/7.jpg)
 
+(jpg/12.jpg)
+
+(jpg/3.jpg)
+
+(jpg/10.jpg)
