@@ -123,3 +123,15 @@ This device is intended for educational and research purposes. Measurements do n
 🔬 For scientific use, always calibrate with reference sources and maintain proper documentation.
 
 ⭐ If you find this project useful, please give it a star!
+
+
+
+
+- Geiger counter
+- Radiation mapping
+- Arduino radiation detector
+- GPS dosimeter
+- Drone radiation monitoring
+- Open source radiation detector
+- DIY Geiger counter
+- WOT Trening szkolenie
