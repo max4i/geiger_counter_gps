@@ -96,15 +96,10 @@ Battery Life	4-6 hours
 Display	OLED 128x32/64
 Connectivity	GPS, Wireless 433MHz or 900MHz
 
-[## 📸 Gallery
+![...](./jpg/7.jpg)
 
-![Drone Mounting](jpg/7.jpg)
+(./jpg/7.jpg)
 
-![Field Testing](jpg/12.jpg)
-
-![System Components](jpg/3.jpg)
-
-![Technical Assembly](jpg/10.jpg)
 
 ...](https://7.jpg
 
