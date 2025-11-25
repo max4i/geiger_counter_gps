@@ -96,6 +96,8 @@ Battery Life	4-6 hours
 Display	OLED 128x32/64
 Connectivity	GPS, Wireless 433MHz or 900MHz
 
+![Project Banner](jpg/1.jpg)
+
 ![...](jpg/7.jpg)
 ![...](jpg/12.jpg)
 ![...](jpg/3.jpg)
