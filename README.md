@@ -96,7 +96,7 @@ Battery Life	4-6 hours
 Display	OLED 128x32/64
 Connectivity	GPS, Wireless 433MHz or 900MHz
 
-## 📸 Gallery
+[## 📸 Gallery
 
 ![Drone Mounting](jpg/7.jpg)
 
@@ -105,7 +105,17 @@ Connectivity	GPS, Wireless 433MHz or 900MHz
 ![System Components](jpg/3.jpg)
 
 ![Technical Assembly](jpg/10.jpg)
-...
+
+...](https://7.jpg
+
+https://12.jpg
+
+https://3.jpg
+
+https://10.jpg
+
+👤 Author)
+
 👤 Author
 max4i - Project and implementation
 
