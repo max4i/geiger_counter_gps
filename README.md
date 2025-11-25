@@ -96,18 +96,10 @@ Battery Life	4-6 hours
 Display	OLED 128x32/64
 Connectivity	GPS, Wireless 433MHz or 900MHz
 
-![...](./jpg/7.jpg)
-
-(./jpg/7.jpg)
-
-
-...](https://7.jpg
-
-https://12.jpg
-
-https://3.jpg
-
-https://10.jpg
+![Drone Mounting](https://github.com/max4i/geiger_counter_gps/raw/main/jpg/7.jpg)
+![Field Testing](https://github.com/max4i/geiger_counter_gps/raw/main/jpg/12.jpg)
+![System Components](https://github.com/max4i/geiger_counter_gps/raw/main/jpg/3.jpg)
+![Technical Assembly](https://github.com/max4i/geiger_counter_gps/raw/main/jpg/10.jpg)
 
 👤 Author)
 
