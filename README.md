@@ -1,4 +1,5 @@
-bin EXE windows
+**bin EXE windows**
+
 https://github.com/max4i/geiger_counter_gps/releases/tag/1.1
 
 # 🚀 Geiger Counter - GPS Radiation Mapping System for Military Training
