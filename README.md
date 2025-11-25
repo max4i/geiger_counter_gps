@@ -22,17 +22,63 @@ do budowy wykorzystano prosty i tani licznik z aliexpress.
 - **💾 Eksport Danych** - Formaty CSV i KML do analizy
 - **🎯 Automatyczne Generowanie Map** - Poziomy promieniowania oznaczone kolorami
 
-![Interfejs Aplikacji](jpg/11.jpg)
+![Interfejs Aplikacji](jpg/2.jpg)
 
 ## 🛠️ Komponenty Sprzętowe
 
 ### Podstawowe Komponenty
 - **Arduino Nano** - Główny kontroler
-- **Tuba Geigera-Müllera** (SBM-20 lub podobna)
-- **Moduł GPS** NEO-6M/7M
-- **Wyświetlacz OLED** 128x32
-- **Moduł Bezprzewodowy** HC-12 lub LoRa D02
+- **Tuba Geigera-Müllera** (radiationD cajoe)
+- **Moduł GPS** dowolny nmea 4800 speed
+- **Wyświetlacz OLED** 128x32/64
+- **Moduł Bezprzewodowy** HC-12 lub LoRa D02 1200 speed !!!
 - **Zasilanie** LiPo 3.7V
-(jpg/13.jpg)
+- **Powerbank module(step up 5V**
+(jpg/6.jpg)
 
 ### Schemat Podłączenia
+GM → Pin 2 (INT) 
+GPS → Piny 4,5 Arduino Nano
+OLED → I2C (A4,A5) HC-12/LoRa → UART
+
+**Uruchomienie Aplikacji Python**
+cd python
+python geiger_v21.py
+
+Lub Użyj Gotowego Pliku EXE
+(https://github.com/max4i/geiger_counter_gps/releases)
+wersja 0.16 to stara wersja robiona dla  sił powietrznych jako wniosek racjonalizatorski
+
+Format Danych
+Data|Czas|Szerokość|Długość|Wysokość|Satelity|HDOP|Dokładność|Dawka_Chwilowa|Dawka_Uśredniona
+
+Przykładowa Ramka Danych
+24.11.2025r.|14:30:25|52.229770|21.011780|113.45|8|1.25|4|0.15|0.12
+
+Mapowanie Promieniowania
+Aplikacja automatycznie generuje mapy z kolorowymi punktami:
+
+🟢 Zielony: < 0.15 μSv/h (Bezpieczne - Normalne tło)
+
+🟠 Pomarańczowy: 0.15-1.0 μSv/h (Podwyższone - Wymaga dalszych badań)
+
+🔴 Czerwony: > 1.0 μSv/h (Niebezpieczne - Wymaga natychmiastowego działania)
+
+Specyfikacja Techniczna
+Parametr	Specyfikacja
+Zakres Pomiarowy	0.01-100 μSv/h
+Dokładność GPS	2-3 metry
+Zasięg Bezprzewodowy	HC-12: 3km, LoRa: 12km
+Częstotliwość Aktualizacji	15 sekund
+Czas Pracy Baterii	4-6 godzin
+Wyświetlacz	OLED 128x32
+Łączność	UART, I2C, Bezprzewodowa
+
+Autor
+max4i - Projekt i implementacja
+
+⚠️ OSTRZEŻENIE BEZPIECZEŃSTWA
+
+Urządzenie jest przeznaczone do celów edukacyjnych i badawczych. Pomiary nie zastępują profesjonalnego sprzętu do monitorowania promieniowania. Zawsze przestrzegaj lokalnych przepisów bezpieczeństwa radiacyjnego i używaj certyfikowanego sprzętu do zastosowań krytycznych dla bezpieczeństwa.
+
+🔬 Do zastosowań naukowych zawsze kalibruj ze źródłami referencyjnymi i prowadź właściwą dokumentację.
