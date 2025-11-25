@@ -95,16 +95,21 @@ Update Frequency	15 seconds
 Battery Life	4-6 hours
 Display	OLED 128x32/64
 Connectivity	GPS, Wireless 433MHz or 900MHz
-## 📸 Gallery
 
-### Drone Integration Examples
+
 ![Drone Mounting](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/7.jpg)
 
-### Field Testing Scenarios  
+
+
+### Field Testing Scenarios
+
 ![Field Testing](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/12.jpg)
 
+
 ### Hardware Components
+
 ![System Components](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/3.jpg)
+
 
 ### Technical Assembly
 ![Technical Assembly](https://raw.githubusercontent.com/max4i/geiger_counter_gps/main/jpg/10.jpg)
