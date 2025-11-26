@@ -2,7 +2,7 @@
 
 https://github.com/max4i/geiger_counter_gps/releases/tag/1.1
 
-# 🚀 Geiger Counter - GPS Radiation Mapping System for Military Training
+# 🚀 Geiger Counter - GPS Radiation Mapping System for Military Training WOT.
 
 In the Polish Army known as **DOSIMETER**
 
