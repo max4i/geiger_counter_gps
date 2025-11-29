@@ -93,7 +93,7 @@ class ModernSerialReaderApp:
         self.root = root
 
         # Konfiguracja
-        self.APP_TITLE = "Wer. 2.5 DRONE GPS GEIGER - 15LBOT"
+        self.APP_TITLE = "Wer. 2.6 DRONE GPS GEIGER - 15LBOT"
         self.WINDOW_SIZE = "1200x800"
         self.MIN_WINDOW_SIZE = "1000x600"
 
